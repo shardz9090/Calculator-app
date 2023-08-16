@@ -63,6 +63,7 @@ button:hover{
     flex: 1 1 0%;
     background-color: var(--primary);
     font-weight: 700;
+    animation: rainbowAnimation 8s infinite;
 }
 .digits{
     display: flex;
@@ -77,4 +78,38 @@ button:hover{
 .operators button:hover {
     background-color: #fffb00;
     color: var(--light);
+}
+
+@keyframes rainbowAnimation {
+    0% {
+        background-color: red;
+    }
+
+    14% {
+        background-color: orange;
+    }
+
+    28% {
+        background-color: yellow;
+    }
+
+    42% {
+        background-color: green;
+    }
+
+    57% {
+        background-color: blue;
+    }
+
+    71% {
+        background-color: indigo;
+    }
+
+    85% {
+        background-color: violet;
+    }
+
+    100% {
+        background-color: red;
+    }
 }
